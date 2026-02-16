@@ -1,6 +1,3 @@
-
-
-
 1. Objective
 
 The objective of this assignment was to build a Multi-Layer Perceptron (MLP) from scratch using NumPy
@@ -38,8 +35,8 @@ Validation Accuracy: 0.7693
 Test Accuracy: 0.7718
 
 Confusion Matrix (Test Set):
-[[2801  904]
- [ 793 2940]]
+[2801  904]
+[793 2940]
 
 The validation and test accuracies are very similar, which indicates good generalization.
 The confusion matrix shows that the model performs fairly evenly across both classes,
@@ -56,3 +53,5 @@ and reviews that contain mixed sentiment where positive and negative wording off
 Overall, this experiment demonstrates that even simple lexicon-based sentiment features can provide
 meaningful predictive power when combined with a properly implemented neural network.
 Despite its simplicity, the MLP achieved stable learning and solid generalization performance.
+
+## Walid El Adli
