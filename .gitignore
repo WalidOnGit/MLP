@@ -1,3 +1,8 @@
 .ipynb_checkpoints/ 
 **/.ipynb_checkpoints/ 
 *.pkl 
+data/IMDB Dataset.csv
+submission.csv
+*.csv
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
