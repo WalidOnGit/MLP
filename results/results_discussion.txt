@@ -1,0 +1,58 @@
+
+
+
+1. Objective
+
+The objective of this assignment was to build a Multi-Layer Perceptron (MLP) from scratch using NumPy
+to classify IMDB movie reviews as either positive or negative.
+
+The process followed a clear pipeline: cleaning the text, extracting sentence-level sentiment features,
+encoding labels, splitting the data into training/validation/test sets, and training the neural network
+using mini-batch gradient descent.
+
+2. Model Setup
+
+Each review was represented using only two numerical features:
+- VADER compound polarity score
+- TextBlob polarity score
+
+The neural network consisted of:
+- 2 input features
+- 1 hidden layer with 16 ReLU neurons
+- 1 sigmoid output neuron
+- Binary Cross-Entropy loss
+- Mini-batch gradient descent (learning rate = 0.05)
+
+3. Training Behavior
+
+The loss decreased sharply in the first few epochs, showing that the model quickly learned useful
+patterns from the data. After roughly 100–150 epochs, both training and validation losses stabilized,
+indicating convergence.
+
+Importantly, the training and validation curves remained close to each other throughout training,
+suggesting that the model did not significantly overfit.
+
+4. Performance
+
+Validation Accuracy: 0.7693
+Test Accuracy: 0.7718
+
+Confusion Matrix (Test Set):
+[[2801  904]
+ [ 793 2940]]
+
+The validation and test accuracies are very similar, which indicates good generalization.
+The confusion matrix shows that the model performs fairly evenly across both classes,
+with comparable numbers of false positives and false negatives.
+
+5. Interpretation and Limitations
+
+Achieving around 77% test accuracy using only two sentence-level polarity features is a strong result.
+However, polarity-based methods have limitations. They may struggle with sarcasm, negation,
+and reviews that contain mixed sentiment where positive and negative wording offsets each other.
+
+6. Conclusion
+
+Overall, this experiment demonstrates that even simple lexicon-based sentiment features can provide
+meaningful predictive power when combined with a properly implemented neural network.
+Despite its simplicity, the MLP achieved stable learning and solid generalization performance.
