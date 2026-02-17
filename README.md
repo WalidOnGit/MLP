@@ -28,6 +28,10 @@ The model uses only two sentence-level sentiment features:
 
 ## Results
 
+The confusion matrix shows balanced performance across both classes. 
+The model correctly classifies a large number of positive and negative reviews, 
+and the similar counts of false positives and false negatives indicate that it does not heavily favor one sentiment class over the other.
+
 - Validation Accuracy: ~77%
 - Test Accuracy: ~77%
 
